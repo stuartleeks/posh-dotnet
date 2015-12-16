@@ -1,0 +1,88 @@
+{
+	"arguments": [
+		{
+			"name": "<PROJECT>",
+			"description": "The project to compile, defaults to the current directory. Can be a path to a project.json or a project directory"
+		}
+	],
+	"options": [
+		{
+			"name": "h",
+			"long": "help",
+			"description": "Show help information",
+			"optionType": "NoValue"
+		},
+		{
+			"name": "o",
+			"long": "output",
+			"description": "Directory in which to place outputs",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "t",
+			"long": "temp-output",
+			"description": "Directory in which to place temporary outputs",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "f",
+			"long": "framework",
+			"description": "Compile a specific framework",
+			"optionType": "MultipleValue"
+		},
+		{
+			"name": "c",
+			"long": "configuration",
+			"description": "Configuration under which to build",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "",
+			"long": "no-project-dependencies",
+			"description": "Skips building project references.",
+			"optionType": "NoValue"
+		},
+		{
+			"name": "",
+			"long": "no-host",
+			"description": "Set this to skip publishing a runtime host when building for CoreCLR",
+			"optionType": "NoValue"
+		},
+		{
+			"name": "n",
+			"long": "native",
+			"description": "Compiles source to native machine code.",
+			"optionType": "NoValue"
+		},
+		{
+			"name": "a",
+			"long": "arch",
+			"description": "The architecture for which to compile. x64 only currently supported.",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "",
+			"long": "ilcargs",
+			"description": "Command line arguments to be passed directly to ILCompiler.",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "",
+			"long": "ilcpath",
+			"description": "Path to the folder containing custom built ILCompiler.",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "",
+			"long": "ilcsdkpath",
+			"description": "Path to the folder containing ILCompiler application dependencies.",
+			"optionType": "SingleValue"
+		},
+		{
+			"name": "",
+			"long": "cpp",
+			"description": "Flag to do native compilation with C++ code generator.",
+			"optionType": "NoValue"
+		}
+	]
+}
